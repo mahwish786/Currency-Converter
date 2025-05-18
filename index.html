@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+  <title>Currency Converter</title>
+
+  <script src="code.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="header.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Loads Font Awesome icon library for using icons like arrows -->
+</head>
+
+<body>
+  <header>
+    <div id="header">
+    <h1>CONVERSO</h1>
+    <a href="#">About Us</a>
+    <a href="#">Help</a>
+    <div id="search-wrapper">
+     <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" class="search-icon">
+     <input type="text" id="searches" placeholder="Search countries & currencies">
+     </div>
+    </div>
+  </header>
+
+  <main>
+  <div class="container">
+    <!-- Main wrapper div for the content of the app -->
+
+    <h2>Currency Converter</h2>
+    <!-- Heading/title for the app -->
+
+    <form>
+      <!-- A form element to group the input and controls -->
+
+      <div class="amount">
+        <!-- Section for entering the amount to convert -->
+
+        <p class="txt">Enter Amount</p>
+        <!-- Label for the amount input -->
+
+        <input value="1" type="number">
+        <!-- Input field to enter a number; default value is 1 -->
+      </div>
+
+      <div class="dropdown">
+        <!-- Container for currency selection dropdowns and switch icon -->
+
+        <div class="from">
+          <!-- "From" currency section -->
+
+          <p class="txt">From</p>
+          <!-- Label for the 'from' currency -->
+
+          <div class="select-container">
+            <!-- Container holding flag image and dropdown -->
+
+            <img src="https://flagsapi.com/US/flat/64.png" alt="Flags">
+            <!-- Flag of the default 'from' country (US) -->
+
+            <select name="from" id="from-select"></select>
+            <!-- Dropdown list for selecting the 'from' currency -->
+          </div>
+        </div>
+
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <!-- Font Awesome icon used to indicate currency switching -->
+
+        <div class="to">
+          <!-- "To" currency section -->
+
+          <p class="txt">To</p>
+          <!-- Label for the 'to' currency -->
+
+          <div class="select-container">
+            <!-- Container holding flag image and dropdown -->
+
+            <img src="https://flagsapi.com/IN/flat/64.png" alt="Flags">
+            <!-- Flag of the default 'to' country (India) -->
+
+            <select name="to" id="to-select"></select>
+            <!-- Dropdown list for selecting the 'to' currency -->
+          </div>
+        </div>
+      </div>
+
+      <div class="final-msg">
+        <!-- Section to display the conversion result -->
+
+        <p>1 USD = 85 INR</p>
+        <!-- Placeholder message showing a sample conversion -->
+      </div>
+
+      <button>Get Exchange Rate</button>
+      <!-- Button to trigger exchange rate fetch when clicked -->
+    </form>
+  </div>
+  </main>
+
+<footer></footer>
+
+</body>
+</html>
